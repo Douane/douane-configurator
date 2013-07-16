@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Douane configurator
+GenericName=Douane configurator
+Comment=Configure Douane firewall
+Type=Application
+Exec=/usr/bin/configurator
+Icon=douane
+Categories=Network;
