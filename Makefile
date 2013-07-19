@@ -18,7 +18,7 @@ source:
 
 install:
 	@sed -i 's/self\.set_version(\"UNKNOWN\")/self\.set_version\(\"$(VERSION)\")/' ./douane/gui/aboutdialog.py
-	$(PYTHON) setup.py install --prefix=/usr --root $(DESTDIR) $(COMPILE)
+	$(PYTHON) setup.py install --root $(DESTDIR) $(COMPILE) --install-layout=deb
 	@sed -i 's/self\.set_version(\".*\")/self\.set_version\(\"UNKNOWN\")/' ./douane/gui/aboutdialog.py
 
 buildrpm:
