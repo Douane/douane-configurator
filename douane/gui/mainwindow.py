@@ -1,4 +1,5 @@
 import os
+import time
 
 from gi.repository import Gtk
 from gtktwitterbox.twitter import GtkTwitterBox
@@ -179,16 +180,27 @@ class MainWindow(Gtk.Window):
         self._reconnect_dbus()
 
     def _reconnect_dbus(self):
-        try:
-            # Initiliaze the D-Bus client
-            self.__dbus_client = DBusClient()
+        error_count = 0
 
-            # Show the status of the daemon by updating the Gtk.Switch state
-            self.__switch_enable_douane.set_active(True)
+        # We try 3 times to contact the D-Bus server
+        # before to concider it as offline
+        while True:
+            try:
+                # Initiliaze the D-Bus client
+                self.__dbus_client = DBusClient()
 
-            self._dbus_service_success()
+                # Show the status of the daemon by updating the Gtk.Switch state
+                self.__switch_enable_douane.set_active(True)
 
-            self._fetch_rules_and_populate_treeview()
+                self._dbus_service_success()
 
-        except DBusServiceNotFoundError as error:
-            self._dbus_service_error(error)
+                self._fetch_rules_and_populate_treeview()
+
+                break
+            except DBusServiceNotFoundError as error:
+                error_count += 1
+                if error_count >= 3:
+                    self._dbus_service_error(error)
+                    break
+                else:
+                    time.sleep(1)
