@@ -3,6 +3,6 @@ Name=Douane configurator
 GenericName=Douane configurator
 Comment=Configure Douane firewall
 Type=Application
-Exec=/usr/bin/configurator
+Exec=/usr/bin/douane-configurator
 Icon=douane
 Categories=Network;
