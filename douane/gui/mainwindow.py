@@ -63,7 +63,7 @@ class MainWindow(Gtk.Window):
         self.__disable_triggers = False
 
         # Initialize and start the Twitter box
-        self.__box_configurator_and_twitter = self.builder.get_object("boxConfiguratorAndTwitter")
+        self.__box_configurator_and_twitter = self.builder.get_object("boxTwitter")
         self.__twitter_box = GtkTwitterBox(self.__box_configurator_and_twitter, "douaneapp", 15)
 
     # ~~~~ Events ~~~~
