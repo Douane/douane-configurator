@@ -8,7 +8,7 @@ Configurator process for the Douane firewall at application layer
 
 ## Screenshot
 
-![douane configurator](https://pbs.twimg.com/media/BNdVVAOCQAI8CRr.png:large)
+![douane configurator](https://pbs.twimg.com/media/BQCUQp7CEAE7wXi.png:large)
 
 The configurator is using [the GtkTwitterBox](https://github.com/zedtux/gtktwitterbox) widget.
 
