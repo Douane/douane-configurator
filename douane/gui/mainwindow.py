@@ -64,7 +64,8 @@ class MainWindow(Gtk.Window):
 
         # Initialize and start the Twitter box
         self.__box_configurator_and_twitter = self.builder.get_object("boxTwitter")
-        self.__twitter_box = GtkTwitterBox(self.__box_configurator_and_twitter, "douaneapp", 15)
+        # Refresh each 15 minutes
+        self.__twitter_box = GtkTwitterBox(self.__box_configurator_and_twitter, "douaneapp", 900)
 
     # ~~~~ Events ~~~~
     def on_buttonAbout_clicked(self, widget):
