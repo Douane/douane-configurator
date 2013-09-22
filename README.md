@@ -12,6 +12,12 @@ Configurator process for the Douane firewall at application layer
 
 The configurator is using [the GtkTwitterBox](https://github.com/zedtux/gtktwitterbox) widget.
 
+## Dependencies
+
+To make it works, you must install python version 3 and the following packages:
+
+    sudo apt-get install python3-gi python3-lxml python3-dbus
+
 ## Install
 
 You can install it easily using the following PPA:
