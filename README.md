@@ -22,7 +22,8 @@ To make it works, you must install python version 3 and the following packages:
 
 You can install it easily using the following PPA:
 
-    sudo add-apt-repository ppa:zedtux/douane
+    sudo add-apt-repository http://repository.douaneapp.com/
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 874CAFB5
     sudo apt-get update
     sudo apt-get install douane-configurator
 
