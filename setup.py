@@ -5,7 +5,7 @@ setup(
     packages = ["douane"],
     package_data = {"douane" : ["gui/*.py", "data/douane.png", "data/glade/*.glade"]},
     scripts = ["douane-configurator"],
-    version = "0.1.8",
+    version = "0.1.9",
     description = "Python library to inject a GTK Box with the latest tweets from an account.",
     author = "Guillaume Hain",
     author_email = "zedtux@zedroot.org",
