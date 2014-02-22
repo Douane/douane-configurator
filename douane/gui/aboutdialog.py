@@ -6,7 +6,7 @@ class DouaneAboutDialog(Gtk.AboutDialog):
   def __init__(self):
     Gtk.AboutDialog.__init__(self)
 
-    self.set_logo(GdkPixbuf.Pixbuf.new_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane_128.png")))
+    self.set_logo(GdkPixbuf.Pixbuf.new_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane.png")))
     self.set_program_name("Douane configurator")
     self.set_version("UNKNOWN")
     self.set_copyright("Guillaume Hain")

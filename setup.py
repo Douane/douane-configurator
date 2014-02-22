@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = "douane-configurator",
     packages = ["douane"],
-    package_data = {"douane" : ["gui/*.py", "data/douane_128.png", "data/glade/*.glade"]},
+    package_data = {"douane" : ["gui/*.py", "data/douane.png", "data/glade/*.glade"]},
     scripts = ["douane-configurator"],
     version = "0.1.8",
     description = "Python library to inject a GTK Box with the latest tweets from an account.",

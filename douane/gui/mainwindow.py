@@ -21,12 +21,12 @@ class MainWindow(Gtk.Window):
 
         # Get the main window object, show all widgets and hook to the delete-event
         self.window_main = self.builder.get_object("windowMain")
-        self.window_main.set_icon_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane_128.png"))
+        self.window_main.set_icon_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane.png"))
         self.window_main.show_all()
         self.window_main.connect("delete-event", self.quit_configurator)
 
         self.__image_douane_logo = self.builder.get_object("imageDouaneLogo")
-        self.__image_douane_logo.set_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane_128.png"))
+        self.__image_douane_logo.set_from_file(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "douane.png"))
 
         self.__box_enable_douane = self.builder.get_object("boxEnableDouane")
         self.__label_enable_douane = self.builder.get_object("labelEnableDouane")
