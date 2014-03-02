@@ -13,5 +13,5 @@ class DouaneAboutDialog(Gtk.AboutDialog):
     self.set_comments("Configurator for Douane firewall at application layer.")
     self.set_license("LGPL")
     self.set_authors(["Guillaume Hain"])
-    self.set_website("https://twitter.com/douaneapp")
-    self.set_website_label("Douane on Twitter")
+    self.set_website("http://douaneapp.com/")
+    self.set_website_label("Douane website")
