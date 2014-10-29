@@ -2,7 +2,6 @@ import os
 import time
 
 from gi.repository import Gtk
-from gtktwitterbox.twitter import GtkTwitterBox
 from douane.dbus import DBusClient, DBusServiceNotFoundError
 from douane.gui.aboutdialog import DouaneAboutDialog
 from douane.autostart import Autostart
@@ -61,11 +60,6 @@ class MainWindow(Gtk.Window):
         self.__switch_autostart_douane.set_active(Autostart().is_installed())
 
         self.__disable_triggers = False
-
-        # Initialize and start the Twitter box
-        self.__box_configurator_and_twitter = self.builder.get_object("boxTwitter")
-        # Refresh each 15 minutes
-        self.__twitter_box = GtkTwitterBox(self.__box_configurator_and_twitter, "douaneapp", 900)
 
     # ~~~~ Events ~~~~
     def on_buttonAbout_clicked(self, widget):
@@ -174,7 +168,6 @@ class MainWindow(Gtk.Window):
 
     def quit_configurator(self, *args):
         self.__disable_triggers = True
-        self.__twitter_box.kill()
         Gtk.main_quit()
 
     def _connect_dbus(self):

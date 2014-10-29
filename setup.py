@@ -6,12 +6,12 @@ setup(
     package_data = {"douane" : ["gui/*.py", "data/douane.png", "data/glade/*.glade"]},
     scripts = ["douane-configurator"],
     version = "0.1.9",
-    description = "Python library to inject a GTK Box with the latest tweets from an account.",
+    description = "The configuration tool for the Douane firewall.",
     author = "Guillaume Hain",
     author_email = "zedtux@zedroot.org",
     url = "https://github.com/zedtux/douane-configurator",
-    download_url = "https://github.com/zedtux/gtktwitterbox",
-    keywords = ["gtk", "widget", "twitter"],
+    download_url = "https://github.com/zedtux/douane-configurator",
+    keywords = ["gtk", "firewall"],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
@@ -23,5 +23,5 @@ setup(
         "Topic :: Desktop Environment :: Gnome",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-    long_description = "Inject a Gtk::Box to show the latest tweets of a given twitter account with auto-refresh"
+    long_description = "The configuration tool for the Douane firewall"
 )
