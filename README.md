@@ -22,7 +22,7 @@ You can install it easily using the following PPA:
 
     git clone https://github.com/Douane/douane-configurator
     cd douane-configurator
-    sudo python setup.py install
+    sudo python3 setup.py install
 
 ## License
 
