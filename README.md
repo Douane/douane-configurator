@@ -14,7 +14,7 @@ Configurator process for the Douane firewall at application layer
 
 To make it works, you must install python version 3 and the following packages:
 
-    sudo apt-get install python3-gi python3-lxml python3-dbus
+    sudo apt-get install gtk+3.0 python3-gi python3-lxml python3-dbus
 
 ## Install
 
