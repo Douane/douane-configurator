@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.20.0 -->
 <interface>
   <requires lib="gtk+" version="3.0"/>
   <object class="GtkListStore" id="liststoreRules">
@@ -70,7 +70,6 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="padding">20</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
@@ -82,16 +81,15 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                       <object class="GtkLabel" id="labelEnableDouane">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">2.2351741291171123e-10</property>
                         <property name="label" translatable="yes">Use Douane to filter my network traffic
 &lt;small&gt;Switching &lt;b&gt;ON&lt;/b&gt; or &lt;b&gt;OFF&lt;/b&gt; the daemon needs root priviledges.&lt;/small&gt;</property>
                         <property name="use_markup">True</property>
                         <property name="track_visited_links">False</property>
+                        <property name="xalign">2.2351741291171123e-10</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="padding">5</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -109,7 +107,6 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">True</property>
-                            <property name="padding">10</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -138,16 +135,15 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                       <object class="GtkLabel" id="labelAutostartDouane">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">2.2351741291171123e-10</property>
                         <property name="label" translatable="yes">Auto start Douane on boot
 &lt;small&gt;Switching &lt;b&gt;ON&lt;/b&gt; or &lt;b&gt;OFF&lt;/b&gt; the daemon autostart needs root priviledges.&lt;/small&gt;</property>
                         <property name="use_markup">True</property>
                         <property name="track_visited_links">False</property>
+                        <property name="xalign">2.2351741291171123e-10</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="padding">5</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -165,7 +161,6 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">True</property>
-                            <property name="padding">10</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -244,13 +239,12 @@ Whenever a new unknown application will try to connect to the internet, a dialog
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_left">10</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">Manage Douane rules using the following list.</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
-                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
