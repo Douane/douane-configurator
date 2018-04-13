@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=douane-configurator
+Icon=preferences-system-firewall
+Type=Service
+X-KDE-ServiceTypes=SystemSettingsExternalApp
+X-KDE-System-Settings-Parent-Category=system-administration
+
+Name=Douane Firewall Configuration
+
+Comment=Configure global settings for douane firewall
+
+X-KDE-Keywords=system,firewall,policies,security,polkit,policykit,douane
