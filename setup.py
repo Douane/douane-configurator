@@ -23,5 +23,7 @@ setup(
         "Topic :: Desktop Environment :: Gnome",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
+    data_files=[('/usr/share/applications', ['douane-configurator.desktop']),
+               ('/usr/share/kservices5', ['kcm_douane.desktop'])],
     long_description = "The configuration tool for the Douane firewall"
 )

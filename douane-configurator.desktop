@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Douane-Configurator
+Exec=douane-configurator
+Icon=preferences-system-firewall
+GenericName=Douane Firewall Configuration
+Terminal=false
+MimeType=application/x-douane-configurator;
+Categories=System;Filesystem;Network;
+Keywords=system;firewall;policies;security;polkit;policykit;douane;
