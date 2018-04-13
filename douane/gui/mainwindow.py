@@ -1,6 +1,8 @@
 import os
 import time
 
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from douane.dbus import DBusClient, DBusServiceNotFoundError
 from douane.gui.aboutdialog import DouaneAboutDialog
